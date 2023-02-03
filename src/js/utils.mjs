@@ -11,11 +11,9 @@ export function getLocalStorage(key) {
 }
 // save data to local storage
 export function setLocalStorage(key, data) {
-  const list = [];
-  if (list) {
-    list.push(localStorage.setItem(key, JSON.stringify(data)));
-  }
-  localStorage.setItem(key, JSON.stringify(data));
+  items = [];
+
+  items.push(localStorage.setItem(key, JSON.stringify(data)));
 }
 
 // helper to get parameter strings
